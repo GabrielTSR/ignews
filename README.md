@@ -5,29 +5,29 @@
 <h1 align="center">
     ig.News - Next.js
 </h1>
-<p align="center">Aplicação para inscrição de newsletter com pagamento via stripe</p>
+<p align="center">Newsletter subscription application with payment via stripe</p>
 
 <p align="center">
- <a href="#sobre-o-projeto">Sobre o Projeto</a> •
- <a href="#tecnologias">Tecnologias</a> •
- <a href="#configurações-necessárias">Configurações necessárias</a> •
- <a href="#licença">Licença</a> •
- <a href="#autor">Autor</a>
+ <a href="#sobre-o-projeto">About the project</a> •
+ <a href="#tecnologias">Technologies</a> •
+ <a href="#configurações-necessárias">Required settings</a> •
+ <a href="#licença">Liscence</a> •
+ <a href="#autor">Author</a>
 </p>
 
-## Sobre o projeto
+## About the project
 
-O projeto tem como objetivo o estudo e desenvolvimento de uma aplicação em ReactJS com NextJS para listagem de posts e sistema de inscrição(subscription).
+The project aims to study and develop an application in ReactJS with NextJS for post listing and subscription system.
 
-A aplicação foi desenvolvida utilizando o framework NextJS aplicando conceitos como consumo de API externas, API Root, Server Side Rendering (SSR), Static Site Generation (SSG), STRIPE para pagamentos das subscriptions, NextAuth para autenticação com Github, FaunaDB para armazenar as informações do usuário em um banco de dados e Prismic CMS para adição e gerenciamento do conteúdo dos posts.
+The application was developed using the NextJS framework applying concepts such as external API consumption, Root API, Server Side Rendering (SSR), Static Site Generation (SSG), STRIPE for subscription payments, NextAuth for authentication with Github, FaunaDB to store information database and Prismic CMS for adding and managing post content.
 
-O projeto foi desenvolvido como pratica das aulas do modulo 03 do [Ignite da Rocketseat](https://rocketseat.com.br/)
+The project was developed as a practice of module 03 classes of the [Ignite da Rocketseat](https://rocketseat.com.br/)
 
 ---
 
-## Tecnologias
+## Technologies
 
-Abaixo as tecnologias utilizadas para construção da aplicação
+Below are the technologies used to build the application
 
 -   [ReactJS](https://reactjs.org/)
 -   [NextJS](https://nextjs.org/)
@@ -40,63 +40,63 @@ Abaixo as tecnologias utilizadas para construção da aplicação
 
 ---
 
-## Configurações necessárias
+## Required settings
 
-### **Requisitos**
+### **Requirements**
 
-Necessário realizar as instalações:
+Necessary to carry out the installations:
 
 -   [Git](https://git-scm.com/)
 -   [Yarn](https://classic.yarnpkg.com)
 -   [Stripe CLI](https://stripe.com/docs/stripe-cli)
 
-Criar conta e configurar os serviços externos:
+Create account and configure external services:
 
 -   [Stripe](https://stripe.com/)
 -   [FaunaDB](https://fauna.com/)
 -   [Prismic CMS](https://prismic.io/)
 
-_Configurações dos serviços estão localizadas no arquivo servicesConfig.md na raiz do projeto._
+_Services settings are located in the servicesConfig.md file at the root of the project._
 
-### **Clone do projeto**
+### **Project clone**
 
 ```bash
-# Execute o comando git clone para realizar o clone do repositório
-$ git clone https://github.com/nelsonsantosaraujo/ignews.git
-# Entre na pasta do repositório clonado
+# Run the git clone command to clone the repository
+$ git clone https://github.com/GabrielTSR/ignews.git
+# Enter the cloned repository folder
 $ cd ignews
 ```
 
-### **Iniciando o projeto**
+### **Starting the project**
 
 ```bash
-# Execute yarn para instalar as dependências
+# Run yarn to install dependencies
 $ yarn
 
-# Na raiz do projeto crie uma copia do arquivo .env.local.example
-# Altere o nome da copia para .env.local
-# Preencha as variáveis ambiente de acordo com as instruções
+# At the root of the project create a copy of the .env.local.example file
+# Change the copy name to .env.local
+# Fill in the environment variables according to the instructions
 $ cp .env.local.example .env.local
 
-# Execute stripe listen para ouvir eventos do webhook
+# Run stripe listen to listen for webhook events
 $ stripe listen --forward-to localhost:3000/api/webhooks
 
-# Para iniciar a aplicação
+# To start the application
 $ yarn dev
 
 ```
 
 ---
 
-## Licença
+## License
 
-Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais informações.
+Distributed under the MIT license. See [LICENSE](LICENSE) for more information.
 
 ---
 
-## Autor
+## Author
 
-Feito por Gabriel Tavares 👋🏽 Entre em contato!
+Made by Gabriel Tavares 👋🏽 Get in touch!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Gabriel-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/gabrieltsr/)
 [![Gmail Badge](https://img.shields.io/badge/-gabrielalvesrocha22@gmail.com-red?style=flat-square&link=mailto:gabrielalvesrocha22@gmail)](mailto:gabrielalvesrocha22@gmail)
